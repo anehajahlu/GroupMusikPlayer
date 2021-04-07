@@ -97,7 +97,7 @@ async def generate_cover(requested_by, title, views, duration, thumbnail):
 @errors
 async def play(_, message: Message):
 
-    lel = await message.reply("🔄 **Processing**")
+    lel = await message.reply("🔄 **LAGUMU SEDANG DIPROSES, HARAP TUNGGU SEBENTAR!**")
     sender_id = message.from_user.id
     sender_name = message.from_user.first_name
     audio = (message.reply_to_message.audio or message.reply_to_message.voice) if message.reply_to_message else None
@@ -172,7 +172,7 @@ async def play(_, message: Message):
         await generate_cover(requested_by, title, views, duration, thumbnail)     
         file_path = await converter.convert(youtube.download(url))
     else:
-        await lel.edit("🔎 **Finding**")
+        await lel.edit("🔎 **SABAR SEDANG DICARI LAGUMU!**")
         sender_id = message.from_user.id
         user_id = message.from_user.id
         sender_name = message.from_user.first_name
@@ -183,7 +183,7 @@ async def play(_, message: Message):
         for i in message.command[1:]:
             query += ' ' + str(i)
         print(query)
-        await lel.edit("🎵 **Processing**")
+        await lel.edit("🎵 **SABAR LAGUMU SEDANG DIPROSES, HARAP TUNGGU SEBENTAR!**")
         ydl_opts = {"format": "bestaudio[ext=m4a]"}
         try:
             results = YoutubeSearch(query, max_results=1).to_dict()
@@ -223,7 +223,7 @@ async def play(_, message: Message):
         position = await queues.put(message.chat.id, file=file_path)
         await message.reply_photo(
         photo="final.png", 
-        caption=f"#⃣ Your requested song **queued** at position {position}!",
+        caption=f"#⃣ LAGUMU AKAN DIPUTAR **queued** {position}!",
         reply_markup=keyboard)
         os.remove("final.png")
         return await lel.delete()
@@ -232,7 +232,7 @@ async def play(_, message: Message):
         await message.reply_photo(
         photo="final.png",
         reply_markup=keyboard,
-        caption="▶️ **Playing** here the song requested by {} via YouTube Music 😜".format(
+        caption="▶️ **LAGUMU SUDAH MULAI!** here the song requested by {} via YouTube Music 😜".format(
         message.from_user.mention()
         ),
     )
