@@ -24,7 +24,7 @@
 - `/pause` - pause song play
 - `/resume` - resume song play
 - `/skip` - play next song
-- `/end` - stop music play
+- `/stop` - stop music play
 
 ### Deploy To Heroku</h4>
 
