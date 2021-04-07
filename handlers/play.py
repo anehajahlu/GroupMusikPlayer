@@ -223,7 +223,7 @@ async def play(_, message: Message):
         position = await queues.put(message.chat.id, file=file_path)
         await message.reply_photo(
         photo="final.png", 
-        caption=f"#⃣ LAGUMU AKAN DIPUTAR **queued** {position}!",
+        caption=f"#⃣ LAGUMU AKAN DIPUTAR **POSISI** {position}!",
         reply_markup=keyboard)
         os.remove("final.png")
         return await lel.delete()
@@ -232,7 +232,7 @@ async def play(_, message: Message):
         await message.reply_photo(
         photo="final.png",
         reply_markup=keyboard,
-        caption="▶️ **LAGUMU SUDAH MULAI!** here the song requested by {} via YouTube Music 😜".format(
+        caption="▶️ **LAGUMU SUDAH MULAI!** Lagu Ini Request-an By {} via YouTube Music 😜".format(
         message.from_user.mention()
         ),
     )
