@@ -112,15 +112,15 @@ async def play(_, message: Message):
                 [
                     [
                         InlineKeyboardButton(
-                            text="Join Updates Channel ",
-                            url=f"https://t.me/daisyxupdates")
+                            text="Subscribe Channelku!",
+                            url=f"https://t.me/captionanakmuda")
 
                     ]
                 ]
             )
         file_name = get_file_name(audio)
         title = file_name
-        thumb_name = "https://telegra.ph/file/889f1bb444c61658ea1ce.jpg"
+        thumb_name = "https://telegra.ph/file/938aada2bb7fcfb007818.jpg"
         thumbnail = thumb_name
         duration = round(audio.duration / 60)
         views = "Locally added"
@@ -155,7 +155,7 @@ async def play(_, message: Message):
                 )
         except Exception as e:
             title = "NaN"
-            thumb_name = "https://telegra.ph/file/889f1bb444c61658ea1ce.jpg"
+            thumb_name = "https://telegra.ph/file/938aada2bb7fcfb007818.jpg"
             duration = "NaN"
             views = "NaN"
             keyboard = InlineKeyboardMarkup(
