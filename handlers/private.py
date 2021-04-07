@@ -22,14 +22,14 @@ Tambahin Aku Di Grupmu, Dan Jangan Lupa Sama Assistennya Diundang Ke Grup!**
                         "🐣 OWNERKU!", url="https://t.me/afterdaytoxic")
                   ],[
                     InlineKeyboardButton(
-                        "💬 GROUP", url="https://t.me/humangabutguys"
+                        "💬 GROUP!", url="https://t.me/humangabutguys"
                     ),
                     InlineKeyboardButton(
-                        "🔊 CHANNEL", url="https://t.me/captionanakmuda"
+                        "🔊 CHANNEL!", url="https://t.me/captionanakmuda"
                     )
                 ],[ 
                     InlineKeyboardButton(
-                        "➕ TAMBAHKAN AKU KE GRUP", url="https://t.me/Saviraac_bot?startgroup=true"
+                        "💕 CARA MENGGUNAKAN AKU!", url="https://telegra.ph/𝓝𝓪𝓶𝓪-𝓐𝓴𝓾-03-19"
                     )]
             ]
         ),
