@@ -9,27 +9,27 @@ from helpers.filters import other_filters2
 async def start(_, message: Message):
     await message.reply_sticker("CAACAgQAAx0CTv65QgABBfJlYF6VCrGMm6OJ23AxHmD6qUSWESsAAhoQAAKm8XEeD5nrjz5IJFYeBA")
     await message.reply_text(
-        f"""**Hey, I'm {bn} 🎵
+        f"""**Hey, I'm Music Player Telegram!
 
-I can play music in your group's voice call. Developed by [Jason](https://t.me/ImJanindu).
+Aku Pemutar Musik, Aku Akan Menghiburmu Di Voice Chat Grup!. Developed by [AFTER](https://t.me/afterdaytoxic).
 
-Add me to your group and play music freely!**
+Tambahin Aku Di Grupmu, Dan Jangan Lupa Sama Assistennya Diundang Ke Grup!**
         """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "🛠 Source Code 🛠", url="https://github.com/ImJanindu/GroupMusicBot")
+                        "🐣 OWNERKU!", url="https://t.me/afterdaytoxic")
                   ],[
                     InlineKeyboardButton(
-                        "💬 Group", url="https://t.me/InfinityBOTs_Support"
+                        "💬 GROUP", url="https://t.me/humangabutguys"
                     ),
                     InlineKeyboardButton(
-                        "🔊 Channel", url="https://t.me/Infinity_BOTs"
+                        "🔊 CHANNEL", url="https://t.me/captionanakmuda"
                     )
                 ],[ 
                     InlineKeyboardButton(
-                        "➕ Add To Your Group ➕", url="https://t.me/JEGroupMusicPlayerBot?startgroup=true"
+                        "➕ TAMBAHKAN AKU KE GRUP", url="https://t.me/Saviraac_bot?startgroup=true"
                     )]
             ]
         ),
@@ -43,7 +43,7 @@ async def gstart(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "🔊 Channel", url="https://t.me/Infinity_BOTs")
+                        "🔊 Channel", url="https://t.me/captionanakmuda")
                 ]
             ]
         )
