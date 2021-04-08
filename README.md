@@ -28,7 +28,8 @@
 
 ### ⚡ Deploy To Heroku</h4>
 
-[![KLIK DISINI DEPLOY](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/anehajahlu/GroupMusikPlayer)
+<p align="center"><a href="https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/anehajahlu/GroupMusikPlayer"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-red?style=for-the-badge&logo=heroku" width="210" height="34.45"/></a></p>
+
 
 Use [@StringSessionGeneratorRobot](https://t.me/StringSessionGeneratorRobot) to get pyrogram string session
 
