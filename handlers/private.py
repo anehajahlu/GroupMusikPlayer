@@ -29,7 +29,7 @@ Tambahin Aku Di Grupmu, Dan Jangan Lupa Sama Assistennya Diundang Ke Grup!**
                     )
                 ],[ 
                     InlineKeyboardButton(
-                        "💕 CARA MENGGUNAKAN AKU!", url="https://telegra.ph/𝓝𝓪𝓶𝓪-𝓐𝓴𝓾-03-19"
+                        "💕 CARA MENGGUNAKAN AKU!", url="https://telegra.ph/ᵃʷ-𝓡𝓲𝔃𝓴𝓱𝓪-04-07"
                     )]
             ]
         ),
