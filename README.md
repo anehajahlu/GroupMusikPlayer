@@ -26,10 +26,6 @@
 - `/skip` - play next song
 - `/stop` - stop music play
 
-### ⚡ Deploy To Heroku</h4>
-
-<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/anehajahlu/GroupMusikPlayer"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-red?style=for-the-badge&logo=heroku" width="210" height="34.45"/></a></p>
-
 
 Use [@StringSessionGeneratorRobot](https://t.me/StringSessionGeneratorRobot) to get pyrogram string session
 
