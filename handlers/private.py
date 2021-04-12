@@ -38,7 +38,7 @@ Tambahin Aku Di Grupmu, Dan Jangan Lupa Sama Assistennya Diundang Ke Grup!**
 
 @Client.on_message(filters.command("start") & ~filters.private & ~filters.channel)
 async def gstart(_, message: Message):
-      await message.reply_text("""**Group Music Player Online ✅**""",
+      await message.reply_text("""**SAVIRA MUSIC ON / AKTIF! ✅**""",
       reply_markup=InlineKeyboardMarkup(
             [
                 [
