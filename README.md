@@ -1,6 +1,6 @@
-<h2 align="center">🐧 Telegram Group Music Player Bot</h2>
+<h2 align="center">🐧 Telegram Grup Player Musik!</h2>
 
-### 🐣 A bot that can play music on telegram group's voice call
+### 🐣 Bot Ini Akan Mem-play Lagu Di Grupmu (Telegram)
 
 <p align="center">
   <img src="https://telegra.ph/file/98612dee27df1c104c2b3.jpg">
@@ -13,18 +13,18 @@
 - Python 3.7+
 - [PyTgCalls](https://github.com/pytgcalls/pytgcalls)
 
-### 🛠 Commands
+### 🛠 Fitur (Command) Untuk Bot
 #### For all in group
-- `/play` - reply to youtube url or song file to play song
-- `/play <song name>` - play song you requested
-- `/song <song name>` - download songs you want quickly
-- `/search <query>` - search videos on youtube with details
+- `/play` - reply pesanmu untuk memulai lagu!
+- `/play <song name>` - play musik untuk mencari lagu!
+- `/song <song name>` - download musik untuk mendownload musik!
+- `/search <query>` - search video youtube untuk lebih lanjut!
 
-#### 🎗️ Admins only
-- `/pause` - pause song play
-- `/resume` - resume song play
-- `/skip` - play next song
-- `/stop` - stop music play
+#### 🎗️ Fitur (Command) Khusus Admin Grup
+- `/pause` - Untuk pause musik mu!
+- `/resume` - Untuk mulai musik mu!
+- `/skip` - Untuk mengganti lagu selanjutnya!
+- `/stop` - Untuk menghentikan lagu!
 
 #### 😍 Deploy With Heroku
 
