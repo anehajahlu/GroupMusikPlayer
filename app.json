@@ -1,6 +1,6 @@
 {
-  "name": "Music Bot",
-  "description": "Open-Source bot to play songs in your Telegram's Group Voice Chat. Powered by PyTgCalls.",
+  "name": "Pemutar Musik Bot",
+  "description": "Private Musik, Playing For Telegram With BOT MUSIC!.",
   "keywords": ["music", "voicechat", "telegram"],
   "repository": "https://github.com/anehajahlu/GroupMusikPlayer",
   "stack": "container",
