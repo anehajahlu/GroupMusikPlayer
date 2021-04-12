@@ -22,7 +22,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 @errors
 async def play(_, message: Message):
 
-    lel = await message.reply("🔎 **Menemukan lagu tersebut...**")
+    lel = await message.reply("🔎 **SEDANG MENCARI LAGUMU!...**")
     sender_id = message.from_user.id
     user_id = message.from_user.id
     sender_name = message.from_user.first_name
@@ -33,7 +33,7 @@ async def play(_, message: Message):
     for i in message.command[1:]:
         query += ' ' + str(i)
     print(query)
-    await lel.edit("🎼 **Memproses Music...**")
+    await lel.edit("🎼 **MEMPROSES LAGUMU!...**")
     ydl_opts = {"format": "bestaudio[ext=m4a]"}
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
@@ -52,7 +52,7 @@ async def play(_, message: Message):
 
     except Exception as e:
         lel.edit(
-            "❌ **Lagu tidak ditemukan.**\n\n**Coba lagu lain atau mungkin mengejanya dengan benar.**"
+            "❌ **LAGU TIDAK DITEMUKAN.**\n\n**COBA LAGI, DAN KOREKSI EJAAN KAMU!.**"
         )
         print(str(e))
         return
@@ -61,8 +61,8 @@ async def play(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        text="𝗜𝗻𝘀𝘁𝗮𝗴𝗿𝗮𝗺 𝗟𝗲𝗯𝗮𝗵",
-                        url="www.instagram.com/antoniprananda")
+                        text="SUBSCRIBE CHANNELKU!",
+                        url="https://t.me/captionanakmuda")
                    
                 ]
             ]
@@ -72,8 +72,8 @@ async def play(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        text="𝗜𝗻𝘀𝘁𝗮𝗴𝗿𝗮𝗺 𝗟𝗲𝗯𝗮𝗵",
-                        url="www.instagram.com/antoniprananda")
+                        text="SUBSCRIBE CHANNELKU!",
+                        url="https://t.me/captionanakmuda")
                    
                 ]
             ]
