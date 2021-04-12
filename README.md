@@ -24,7 +24,7 @@
 - `/pause` - Untuk pause musik mu!
 - `/resume` - Untuk mulai musik mu!
 - `/skip` - Untuk mengganti lagu selanjutnya!
-- `/stop` - Untuk menghentikan lagu!
+- `/end` - Untuk menghentikan lagu!
 
 #### 😍 Deploy With Heroku
 
