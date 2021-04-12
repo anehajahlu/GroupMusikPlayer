@@ -93,7 +93,7 @@ async def play(_, message: Message):
         position = await queues.put(message.chat.id, file=file_path)
         await message.reply_photo(
         photo=thumb_name, 
-        caption=f"🎼 **Lagu yang Anda minta Sedang Antri di posisi** **{position}!**",
+        caption=f"🎼 **LAGU KAMU AKAN DIPUTAR DIPOSISI** **{position}!**",
         reply_markup=keyboard2)
         return await lel.delete()
     else:
@@ -101,7 +101,7 @@ async def play(_, message: Message):
         await message.reply_photo(
         photo=thumb_name,
         reply_markup=keyboard,
-        caption="🎼 **Play lagu request dari** {} ".format(
+        caption="🎼 **LAGUMU SUDAH DIMULAI, REQUEST BY** {} ".format(
         message.from_user.mention()
         ),
     )
