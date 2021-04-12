@@ -21,7 +21,7 @@ async def pause(_, message: Message):
         await message.reply_text("❗ TIDAK BISA DI MULAI PAKSA!")
     else:
         callsmusic.pytgcalls.pause_stream(message.chat.id)
-        await message.reply_text("😏 LAGUMU SUDAH DIPAUSE!/DIHENTIKAN! SEMENTARA!")
+        await message.reply_text("😏 LAGUMU SUDAH DIHENTIKAN! SEMENTARA!")
 
 
 @Client.on_message(command("resume") & other_filters)
@@ -52,7 +52,7 @@ async def stop(_, message: Message):
             pass
 
         callsmusic.pytgcalls.leave_group_call(message.chat.id)
-        await message.reply_text("🥺 LAGUMU SUDAH DIHENTIKAN!/DISTOP!")
+        await message.reply_text("🥺 LEAVE TO VOICE CALL GROUP!, MUSIC SUDAH BERHENTI!")
 
 
 @Client.on_message(command("skip") & other_filters)
