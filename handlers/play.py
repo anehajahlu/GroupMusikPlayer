@@ -97,7 +97,7 @@ async def generate_cover(requested_by, title, views, duration, thumbnail):
 @errors
 async def play(_, message: Message):
 
-    lel = await message.reply("🔄 **LAGUMU SEDANG DIPROSES, HARAP TUNGGU SEBENTAR!**")
+    lel = await message.reply("🙃 **LAGUMU SEDANG DIPROSES, HARAP TUNGGU SEBENTAR!**")
     sender_id = message.from_user.id
     sender_name = message.from_user.first_name
     audio = (message.reply_to_message.audio or message.reply_to_message.voice) if message.reply_to_message else None
@@ -106,7 +106,7 @@ async def play(_, message: Message):
     if audio:
         if round(audio.duration / 60) > DURATION_LIMIT:
             raise DurationLimitError(
-                f"❌ Videos longer than {DURATION_LIMIT} minute(s) aren't allowed to play!"
+                f"❌ MAAF VIDEOMU TIDAK DIPROSES! {DURATION_LIMIT} MENIT(s) KARENA BERBEDA MENIT!"
             )
         keyboard = InlineKeyboardMarkup(
                 [
@@ -200,7 +200,7 @@ async def play(_, message: Message):
 
         except Exception as e:
             lel.edit(
-                "❌ Song not found.\n\nTry another song or maybe spell it properly."
+                "❌ LAGUMU TIDAK DITEMUKAN.\n\nCARI EJAAN YANG BENAR!."
             )
             print(str(e))
             return
@@ -232,7 +232,7 @@ async def play(_, message: Message):
         await message.reply_photo(
         photo="final.png",
         reply_markup=keyboard,
-        caption="▶️ **LAGUMU SUDAH MULAI!** Lagu Ini Request-an By {} via YouTube Music 😜".format(
+        caption="✨ **LAGUMU SUDAH MULAI!** Lagu Ini Request-an By {} via Savira Music! 😝✨".format(
         message.from_user.mention()
         ),
     )
