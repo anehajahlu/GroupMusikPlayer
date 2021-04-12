@@ -32,7 +32,7 @@ async def inline(client: Client, query: InlineQuery):
                         result["viewCount"]["short"]
                     ),
                     input_message_content=InputTextMessageContent(
-                        "/play https://www.youtube.com/watch?v={}".format(
+                        "https://www.youtube.com/watch?v={}".format(
                             result["id"]
                         )
                     ),
